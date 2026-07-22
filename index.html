@@ -574,6 +574,47 @@
     text-shadow: 1px 1px 0 rgba(0,0,0,.1);
   }
 
+  /* ===== head: 뱅뱅사거리 맥날 ===== */
+  .mcd-head {
+    position: absolute;
+    left: 50%; top: 14px;
+    transform: translateX(-50%);
+    z-index: 3;
+    width: 88px; height: 76px;
+    background: linear-gradient(180deg, #E02B2B 0%, #C41F1F 100%);
+    border-radius: 20px;
+    box-shadow: inset 0 -4px 0 rgba(0,0,0,.12);
+  }
+  .mcd-head .m-letter {
+    position: absolute;
+    left: 50%; top: 1px;
+    transform: translateX(-50%);
+    font-family: "Arial Rounded MT Bold", "Helvetica Neue", Arial, sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 1;
+    letter-spacing: -3px;
+    color: #FFC300;
+    text-shadow: 0 2px 0 rgba(0,0,0,.18);
+  }
+  .mcd-head .e {
+    position: absolute;
+    top: 51px;
+    width: 9px; height: 11px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 50% 58%, #222 0 2.6px, #FFF 2.7px);
+  }
+  .mcd-head .e.l { left: 25px; }
+  .mcd-head .e.r { right: 25px; }
+  .mcd-head .mouth {
+    position: absolute;
+    left: 50%; top: 62px;
+    transform: translateX(-50%);
+    width: 16px; height: 8px;
+    border-bottom: 3px solid #FFF;
+    border-radius: 0 0 16px 16px;
+  }
+
   /* ===== head: 아이돌 아짱 ===== */
   .idol {
     position: absolute;
@@ -1028,6 +1069,7 @@
   var HEADS = {
     mole: '<div class="mole-head"><span class="eye l"></span><span class="eye r"></span><span class="snout"></span><span class="teeth"></span><span class="blush l"></span><span class="blush r"></span></div>',
     rocket: '<div class="rocket-head"><span class="r-hair"></span><span class="r-fringe"></span><span class="r-face"><i class="lash l"></i><i class="lash r"></i><i class="eye l"></i><i class="eye r"></i><i class="mouth"></i><i class="ear-ring l"></i><i class="ear-ring r"></i></span></div>',
+    mcd: '<div class="mcd-head"><span class="m-letter">M</span><span class="e l"></span><span class="e r"></span><span class="mouth"></span></div>',
     trio: '<div class="trio"><div class="dig a"><i class="e l"></i><i class="e r"></i><b class="nose"></b></div><div class="dig b"><i class="e l"></i><i class="e r"></i><b class="nose"></b></div><div class="dig c"><i class="e l"></i><i class="e r"></i><b class="nose"></b></div></div>',
     chick: '<div class="chick-head"><span class="comb"></span><span class="bang"></span><span class="eye l"></span><span class="eye r"></span><span class="beak"></span><span class="heart">♥</span><span class="swirl l"></span><span class="swirl r"></span></div>',
     idol: '<div class="idol"><span class="i-hair"></span><span class="i-lock l"></span><span class="i-lock r"></span><span class="i-face"><i class="e l"></i><i class="e r"></i><i class="mouth"></i><i class="blush l"></i><i class="blush r"></i></span><span class="i-bangs"></span><span class="i-rabbit"></span><span class="i-bow"><i class="knot"></i></span></div>',
@@ -1060,6 +1102,12 @@
       quote: "“이 결혼을 방해하는 자, 그게 누구든 용서하지 않겠어~!”",
       skill: "어디서든 흰 연기와 함께 3단 포즈로 등장",
       caution: "혼인신고서를 자꾸 ‘비밀 작전 서류’라고 부름"
+    },
+    {
+      species: "24시간 짝사랑 중인 패스트푸드", name: "뱅뱅사거리 맥날", head: "mcd", rarity: "r",
+      quote: "“한 발짝 뒤엔… 항상… 내가 있었는데, 그대… 사랑은 멀리서 찾지 말고 가까운 매장에서 찾아요.”",
+      skill: "감자튀김 앞에서 오간 연애 상담 전부 청취·암기 완료 (특히 지훈 님 스토리는 정주행 3회차)",
+      caution: "24시간 연중무휴라 결혼해도 퇴근 안 함. 그리고 마음 한켠엔 아직 지훈 님이 있음"
     },
     {
       species: "매운맛 닭", name: "호치롱", head: "chick", rarity: "r",
